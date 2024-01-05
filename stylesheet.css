@@ -28,6 +28,10 @@
     --gradient-linear-color-bg:linear-gradient(150deg,rgba(247,1,120,1)0%,
                                                 rgba(160,8,156,1)50%,
                                                 rgba(99,13,178,1)100%);
+
+    --bwg-linear-color-bg:linear-gradient(90deg,rgb(43, 38, 41)0%,
+                                                rgb(215, 207, 207)50%,
+                                                rgb(124, 119, 126)100%);
     --main-color:#e6006d;
     --font-color:#90979f;
     --hover-box-shadow:rgba(0,0,0,0.19)0px 10px 20px,
@@ -256,7 +260,7 @@ section{
 .btn-box{
     display: flex;
     justify-content: space-between;
-    width: 320px;
+    width: 400px;
     margin-top: 2rem;
     margin-bottom: 4rem;
 }
@@ -266,7 +270,7 @@ section{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 10px;
+    gap: 20px;
     opacity: 0;
     animation: slideTop 1s ease forwards;
     animation-delay: 0.7s;
@@ -283,6 +287,7 @@ section{
     transition: all .3s ease;              
 }
 
+/* ==================== PDF Viewer ============================ */
 .pdf-box{
     width: 110%; 
     height: 600px;
@@ -301,6 +306,22 @@ section{
                   rgba(60,64,67,0.15)0px 2px 6px 2px;
 }
 
+/* ==================== Email Signature ============================ */
+#email-signature{
+    width: 515px; 
+    height: auto;
+    padding: 5px;
+    margin-bottom: 20px;
+    display: none;
+    box-shadow: rgba(60,64,67,0.3)0px 1px 2px 0,
+                  rgba(94, 43, 47, 0.15)0px 2px 6px 2px;
+    background-color: #e8e1e1;
+    border: 0.5px double #000;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* ================================================ */
 .social-media{
     display: flex;
     justify-content: space-between;
@@ -393,7 +414,7 @@ section{
     content: "";
     position: absolute;
     inset: 20px;
-    background: #000;
+    background: var(--bwg-linear-color-bg);
     border-radius: 50%;
     z-index: 1;
 }
@@ -1165,8 +1186,9 @@ h2.counter span{
 {
     display: block;
     font-size: 1.25rem;
-    font-weight: 600;
-    margin-top: 20px; 
+    font-weight: 500;
+    margin-top: 0.25rem; 
+    margin-bottom: 0.75rem; 
 }
 
 .sk-title span{
@@ -1228,7 +1250,10 @@ h2.counter span{
     display: none;
 }
 
-
+.sk-title iconify-icon{
+    color: #e6006d; 
+    font-size: 20px;
+}
 /* ==================== Contact section css code ============================ */
 
 .contact

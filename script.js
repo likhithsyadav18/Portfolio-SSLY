@@ -227,21 +227,14 @@ window.addEventListener("scroll",()=>{
 let menuLi = document.querySelectorAll("header ul li a");
 let section = document.querySelectorAll('section');
 
-function activeMenu() {
+function activeMenu(){
     let len = section.length;
-    let activeIndex = 0; // Initialize activeIndex to a default value
-    while (--len && window.scrollY + 97 < section[len].offsetTop) {
-        activeIndex = len; // Store the last valid index while scrolling
-    }
-
+    while(--len && window.scrollY + 97 < section[len].offsetTop){}
     menuLi.forEach(sec => sec.classList.remove("active"));
-    if (menuLi[activeIndex]) {
-        menuLi[activeIndex].classList.add("active");
-    }
+    menuLi[len].classList.add("active");
 }
-
 activeMenu();
-window.addEventListener("scroll", activeMenu);
+window.addEventListener("scroll",activeMenu);
 
 // scroll reveal
 

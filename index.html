@@ -21,13 +21,14 @@
 <body>
     <div class="overlay"></div>
     <header>
-        <a href="#" class="logo"><span>Portfolio.com</span></a>
+        <a href="#" class="logo"><span>FlowCV</span></a>
         <ul class="navlist">
             <li><a href="#home" style="--i:1" class="active"> Home </a></li>
             <li><a href="#about" style="--i:2"> About Me </a></li>
-            <li><a href="#services" style="--i:3">Projects</a></li>
-            <li><a href="#portfolio" style="--i:4">Portfolio</a></li>
-            <li><a href="#blog" style="--i:5">Blog</a></li>
+            <li><a href="#services" style="--i:3">Projects and Researches</a></li>
+            <li><a href="#portfolio" style="--i:4">Certifications</a></li>
+            <li><a href="#blog" style="--i:5">Blogs</a></li>
+            <li><a href="#skillsData" style="--i:5">Skills</a></li>
             <li><a href="#contact" style="--i:6">Contact</a></li>
         </ul>
         <div class="right-header">
@@ -77,17 +78,19 @@
             </div>
 
             <div class="btn-box">
-                <a href="mailto:likhithsyadav18@gmail.com" class="btn">E-Mail Me! <i class='bx bx-right-arrow-alt' ></i></a>
+                <a href="" target="_blank" id="getDigiSign" class="btn">Digital Signature <i class='bx bx-window-open'></i></a>
                 <a href="" target="_blank" id="getResume" class="btn d-CV">View Resume <i class='bx bx-download'></i></a>
             </div>
             <!-- src="img/resume.pdf" -->
             <div class="pdf-box">
                 <iframe type="application/pdf" id="pdfViewer"></iframe>
-            </div>            
+            </div>  
+            
+            <div id="email-signature"></div>
         </div>
 
         <div class="img-hero">
-            <img src="img/image.png" alt="">
+            <img src="img/portfolio/transparent-bw.png" alt="">
             <div class="rotate-text">
                 <div class="text">
                     <p>- IKIGAI-SHOSHIN-WABISABI-KAIZEN-SHIKITOGAI-GAMAN-SHUHARI -</p>
@@ -100,7 +103,7 @@
 
     <section class="about" id="about">
         <div class="about-img">
-            <img src="img/image2.png" alt="" class="aboutHero">
+            <img src="img/portfolio/professional.png" alt="" class="aboutHero">
             <div class="showcase-ring">
                 <img src="shapes/ring.png" class="ring">
                 <img src="shapes/circle.png" class="circle">
@@ -120,7 +123,7 @@
                 <div class="content">
                     <div class="text-box">
                     <p>Programming and Scripting Languages</p>
-                    <span>C++, Python, Java, R, SQL, PL/SQL, JavaScript, Kotlin, HTML, CSS, D3, PHP, CUDA, Bash/Shell Scripting.</span>
+                    <span>C++, Python, Java, R, SQL, PL/SQL, JavaScript, Kotlin, HTML, CSS, PHP, CUDA, Bash/Shell Scripting.</span>
                 </div>
 
                 <div class="text-box">
@@ -130,7 +133,7 @@
 
                 <div class="text-box">
                     <p>Cloud Technologies</p>
-                    <span>Amazon Web Services, Microsoft Azure, Google Cloud Platform.</span>
+                    <span>Amazon Web Services, Microsoft Azure, Google Cloud Platform, Google Firebase.</span>
                 </div>
 
                 <div class="text-box">
@@ -145,11 +148,11 @@
 
                 <div class="text-box">
                     <p>Frameworks and Libraries</p>
-                    <span>Apache Spark, Tensorflow, Pytorch, SciPy, Scikit-learn, Keras, Hadoop, Flask, Ruby on Rails, Django, Angular.js, Node.js, Express.js, Android SDK, React Native, Adobe XD, JUnit.</span>
+                    <span>Apache Spark, Tensorflow, Pytorch, SciPy, Scikit-learn, Keras, Hadoop, Flask, Ruby on Rails, Django, D3.js, React.js, Angular.js, Node.js, Express.js, Android SDK, React Native, Adobe XD, JUnit.</span>
                 </div>
 
                 <div class="text-box">
-                    <p>Additional Skilla</p>
+                    <p>Additional Skills</p>
                     <span>LaTeX, Slack, Docker, RESTful APIs, Kubernetes.</span>
                 </div>
             </div>
@@ -248,7 +251,7 @@
                 <div class="portfolio-box mix maclearn">
     
                     <div class="portfolio-img">
-                        <img src="img/lssvm_costmodel.png" alt=""/>
+                        <img src="img/project_research/lssvm_costmodel.png" alt=""/>
                     </div>
     
                     <div class="portfolio-content">
@@ -262,21 +265,21 @@
                 <div class="portfolio-box mix maclearn">
     
                     <div class="portfolio-img">
-                        <img src="img/mlprivacy.png" alt="">
+                        <img src="img/project_research/datascience.png" alt="">
                     </div>
     
                     <div class="portfolio-content">
-                        <h3>ML Log Analysis and ML Log Privacy Preserving</h3>
-                        <p>This project involves analyzing open-source ML pipeline log messages to assess privacy risks using Scala-based ML applications on Apache Spark. By evaluating potential information exposure and offering recommendations, it aims to bolster ML log privacy, contributing to data privacy discussions in the ML community and ensuring user information security in ML systems.</p>
+                        <h3>A Comparitive Study of Performance Metrics of Data Mining Algorithms on Medical Data</h3>
+                        <p>Using four data mining algorithms on the ILPD dataset, this research compared six prediction models via 10-fold cross-validation. SVM excelled with 74.82% accuracy, while Naive Bayes lagged behind at 56.55%, with additional metrics detailed in the paper.</p>
                         <a href="#" class="readMore"><i class="bx bx-link-external" style="color: aliceblue;"></i></a>
                     </div>
-                    
+    
                 </div>
     
                 <div class="portfolio-box mix webapp">
     
                     <div class="portfolio-img">
-                        <img src="img/crystalball.png" alt="">
+                        <img src="img/project_research/crystalball.png" alt="">
                     </div>
     
     
@@ -287,25 +290,11 @@
                     </div>
                     
                 </div>
-    
-                <div class="portfolio-box mix maclearn dbsapp">
-    
-                    <div class="portfolio-img">
-                        <img src="img/fakereview.png" alt="">
-                    </div>
-    
-                    <div class="portfolio-content">
-                        <h3>Fake Review Detection</h3>
-                        <p>Using machine learning and deep learning models trained on Yelp's dataset, this project automates fake review detection, addressing imbalanced data, feature engineering, analysis, hyperparameter tuning, and concludes with performance insights and enhancement strategies.</p>
-                        <a href="#" class="readMore"><i class="bx bx-link-external" style="color: aliceblue;"></i></a>
-                    </div>
-                    
-                </div>
-    
+
                 <div class="portfolio-box mix maclearn">
     
                     <div class="portfolio-img">
-                        <img src="img/brainfmri.png" alt="">
+                        <img src="img/project_research/brainfmri.png" alt="">
                     </div>
     
                     <div class="portfolio-content">
@@ -315,27 +304,54 @@
                     </div>
                     
                 </div>
-    
+
                 
-    
-                <div class="portfolio-box mix maclearn">
+                <div class="portfolio-box mix webapp dbsapp mobapp">
     
                     <div class="portfolio-img">
-                        <img src="img/datascience.png" alt="">
+                        <img src="img/project_research/myportfolio.png" alt="">
                     </div>
     
                     <div class="portfolio-content">
-                        <h3>A Comparitive Study of Performance Metrics of Data Mining Algorithms on Medical Data</h3>
-                        <p>Using four data mining algorithms on the ILPD dataset, this research compared six prediction models via 10-fold cross-validation. SVM excelled with 74.82% accuracy, while Naive Bayes lagged behind at 56.55%, with additional metrics detailed in the paper.</p>
+                        <h3> Creating personal portfolio website</h3>
+                        <p>This project is about creating a dynamic personal portfolio website using HTML, CSS, and JavaScript, incorporating Google Firebase for functionality and utilized FlowCV online website for crafting resumes, portfolio website cover page and email signatures.</p>
                         <a href="#" class="readMore"><i class="bx bx-link-external" style="color: aliceblue;"></i></a>
                     </div>
+            
+                </div>
+                
+                <div class="portfolio-box mix maclearn dbsapp">
     
+                    <div class="portfolio-img">
+                        <img src="img/project_research/fakereview.png" alt="">
+                    </div>
+    
+                    <div class="portfolio-content">
+                        <h3>Fake Review Detection</h3>
+                        <p>Using machine learning and deep learning models trained on Yelp's dataset, this project automates fake review detection, addressing imbalanced data, feature engineering, analysis, hyperparameter tuning, and concludes with performance insights and enhancement strategies.</p>
+                        <a href="#" class="readMore"><i class="bx bx-link-external" style="color: aliceblue;"></i></a>
+                    </div>
+                    
+                </div>
+
+                <div class="portfolio-box mix maclearn">
+    
+                    <div class="portfolio-img">
+                        <img src="img/project_research/mlprivacy.png" alt="">
+                    </div>
+    
+                    <div class="portfolio-content">
+                        <h3>ML Log Analysis and ML Log Privacy Preserving</h3>
+                        <p>This project involves analyzing open-source ML pipeline log messages to assess privacy risks using Scala-based ML applications on Apache Spark. By evaluating potential information exposure and offering recommendations, it aims to bolster ML log privacy, contributing to data privacy discussions in the ML community and ensuring user information security in ML systems.</p>
+                        <a href="#" class="readMore"><i class="bx bx-link-external" style="color: aliceblue;"></i></a>
+                    </div>
+                    
                 </div>
                 
                 <div class="portfolio-box mix dbsapp">
     
                     <div class="portfolio-img">
-                        <img src="img/dbapp.png" alt="">
+                        <img src="img/project_research/dbapp.png" alt="">
                     </div>
     
                     <div class="portfolio-content">
@@ -349,7 +365,7 @@
                 <div class="portfolio-box mix aspapp">
     
                     <div class="portfolio-img">
-                        <img src="img/warehouse.png" alt="">
+                        <img src="img/project_research/warehouse.png" alt="">
                     </div>
     
                     <div class="portfolio-content">
@@ -363,7 +379,7 @@
                 <div class="portfolio-box mix mobapp">
     
                     <div class="portfolio-img">
-                        <img src="img/mobileapp.png" alt="">
+                        <img src="img/project_research/mobileapp.png" alt="">
                     </div>
     
                     <div class="portfolio-content">
@@ -377,7 +393,7 @@
                 <div class="portfolio-box mix maclearn">
     
                     <div class="portfolio-img">
-                        <img src="img/lssvm_svm.png" alt="">
+                        <img src="img/project_research/lssvm_svm.png" alt="">
                     </div>
     
                     <div class="portfolio-content">
@@ -391,7 +407,7 @@
                 <div class="portfolio-box mix dbsapp">
     
                     <div class="portfolio-img">
-                        <img src="img/dps.png" alt="">
+                        <img src="img/project_research/dps.png" alt="">
                     </div>
     
                     <div class="portfolio-content">
@@ -463,7 +479,7 @@
     
         <section class="blog" id="blog">
             <div class="main-text">
-                <h2 class="heading">Blogs</h2>
+                <h2 class="heading">My Blogs</h2>
                 <span></span>
             </div>
     
@@ -485,13 +501,13 @@
     
                     <div class="card swiper-slide">
                         <div class="card-top">
-                            <img src="img/blog/2.jpg" alt="">
+                            <img src="img/blog/tucson.png" alt="">
                         </div>
                         <div class="card-info">
-                            <h2>Mobile App Landing Page</h2>
-                            <span class="date">Sunday, Jan 14, 2023</span>
+                            <h2>Trip to Tucson</h2>
+                            <span class="date">Thursday, Jan 04, 2023</span>
                             <p class="excerpt">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, illo.
+                                "Embark on an unforgettable journey with a trip to Tucson, where vibrant culture meets breathtaking landscapes in the heart of the Southwest."
                             </p>
                             <a href="#" class="readMore">Explore More</a>
                         </div>
@@ -574,7 +590,7 @@
                     <div class="skillBox">
                         <div class="main-text">
                             <h2 class="heading">My Skills</h2>
-                            <span>Let Me Help you</span>
+                            <span>CORE</span>
                         </div>
                         <div class="skill-wrap-progress">
 
@@ -584,12 +600,12 @@
                                         <span class="level"></span>
                                     </div>
                                     <p class="increasing_percentage">0</p>
-                                    <div class="total_percentage">80%</div>
+                                    <div class="total_percentage">82%</div>
                                 </div>
 
                                 <div class="sk-title">
-                                    <i style="color: #c95d2e; font-size: 20px;" class='bx bxl-html5'></i>
-                                    <span>HTML</span>
+                                    <iconify-icon icon="ph:code-bold"></iconify-icon>
+                                    <span>Coding Mastery</span>
                                 </div>        
                             </div>
 
@@ -599,12 +615,12 @@
                                         <span class="level"></span>
                                     </div>
                                     <p class="increasing_percentage">0</p>
-                                    <div class="total_percentage">80%</div>
+                                    <div class="total_percentage">93%</div>
                                 </div>
 
                                 <div class="sk-title">
-                                    <i style="color: #c95d2e; font-size: 20px;" class='bx bxl-html5'></i>
-                                    <span>HTML</span>
+                                    <iconify-icon icon="carbon:text-link-analysis"></iconify-icon>
+                                    <span>Data Science and Analysis</span>
                                 </div>        
                             </div>
 
@@ -614,12 +630,12 @@
                                         <span class="level"></span>
                                     </div>
                                     <p class="increasing_percentage">0</p>
-                                    <div class="total_percentage">10%</div>
+                                    <div class="total_percentage">88%</div>
                                 </div>
 
                                 <div class="sk-title">
-                                    <i style="color: #c95d2e; font-size: 20px;" class='bx bxl-html5'></i>
-                                    <span>HTML</span>
+                                    <iconify-icon icon="material-symbols:troubleshoot"></iconify-icon><iconify-icon icon="carbon:debug"></iconify-icon>
+                                    <span>Troubleshooting and Debugging</span>
                                 </div>        
                             </div>
 
@@ -629,15 +645,106 @@
                                         <span class="level"></span>
                                     </div>
                                     <p class="increasing_percentage">0</p>
-                                    <div class="total_percentage">80%</div>
+                                    <div class="total_percentage">86%</div>
                                 </div>
 
                                 <div class="sk-title">
-                                    <i style="color: #c95d2e; font-size: 20px;" class='bx bxl-html5'></i>
-                                    <span>HTML</span>
+                                    <iconify-icon icon="material-symbols:database"></iconify-icon>
+                                    <span>Database Management</span>
+                                </div>        
+                            </div>
+
+
+                            <div class="skill-containerBox">
+                                <div class="progress_bar_box">
+                                    <div class="progress_bar">
+                                        <span class="level"></span>
+                                    </div>
+                                    <p class="increasing_percentage">0</p>
+                                    <div class="total_percentage">78%</div>
+                                </div>
+
+                                <div class="sk-title">
+                                    <iconify-icon icon="mdi:design"></iconify-icon>
+                                    <span>UI/UX Design</span>
+                                </div>        
+                            </div>
+
+                            <div class="skill-containerBox">
+                                <div class="progress_bar_box">
+                                    <div class="progress_bar">
+                                        <span class="level"></span>
+                                    </div>
+                                    <p class="increasing_percentage">0</p>
+                                    <div class="total_percentage">92%</div>
+                                </div>
+
+                                <div class="sk-title">
+                                    <iconify-icon icon="mdi:web"></iconify-icon>
+                                    <span>Web Development</span>
                                 </div>        
                             </div>
                             
+                            <div class="skill-containerBox">
+                                <div class="progress_bar_box">
+                                    <div class="progress_bar">
+                                        <span class="level"></span>
+                                    </div>
+                                    <p class="increasing_percentage">0</p>
+                                    <div class="total_percentage">84%</div>
+                                </div>
+
+                                <div class="sk-title">
+                                    <iconify-icon icon="radix-icons:mobile"></iconify-icon>
+                                    <span>Mobile Development</span>
+                                </div>        
+                            </div>
+
+                            <div class="skill-containerBox">
+                                <div class="progress_bar_box">
+                                    <div class="progress_bar">
+                                        <span class="level"></span>
+                                    </div>
+                                    <p class="increasing_percentage">0</p>
+                                    <div class="total_percentage">79%</div>
+                                </div>
+
+                                <div class="sk-title">
+                                    <iconify-icon icon="material-symbols:cloud-outline"></iconify-icon>
+                                    <span>Cloud Technologies</span>
+                                </div>        
+                            </div>
+                            
+                            <div class="skill-containerBox">
+                                <div class="progress_bar_box">
+                                    <div class="progress_bar">
+                                        <span class="level"></span>
+                                    </div>
+                                    <p class="increasing_percentage">0</p>
+                                    <div class="total_percentage">66%</div>
+                                </div>
+
+                                <div class="sk-title">
+                                    <iconify-icon icon="ri:seo-line"></iconify-icon>
+                                    <span>Search Engine Optimization</span>
+                                </div>        
+                            </div>
+
+                            <div class="skill-containerBox">
+                                <div class="progress_bar_box">
+                                    <div class="progress_bar">
+                                        <span class="level"></span>
+                                    </div>
+                                    <p class="increasing_percentage">0</p>
+                                    <div class="total_percentage">74%</div>
+                                </div>
+
+                                <div class="sk-title">
+                                    <iconify-icon icon="teenyicons:ab-testing-outline"></iconify-icon>
+                                    <span>Testing and Quality Assurance</span>
+                                </div>        
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -648,7 +755,7 @@
                     <div class="skillBox">
                         <div class="main-text">
                             <h2 class="heading">My Skills</h2>
-                            <span>Let Me Help you</span>
+                            <span>Interpersonal </span>
                         </div>
                         <div class="skill-wrap-radial">
                             <div class="skill">
@@ -664,12 +771,12 @@
                                                 <circle cx="85" cy="85" r="75" stroke-linecap="round" />
                                        </svg>
                                        <h2 class="counter">
-                                        <span data-target="89">0</span>%
+                                        <span data-target="80">0</span>%
                                        </h2>
                                     </div>
                                 </div>
                                 <div class="sk-title">
-                                    HTML
+                                    Problem-Solving
                                 </div>
                             </div>
 
@@ -686,35 +793,12 @@
                                                 <circle cx="85" cy="85" r="75" stroke-linecap="round" />
                                        </svg>
                                        <h2 class="counter">
-                                        <span data-target="47">0</span>%
+                                        <span data-target="81">0</span>%
                                        </h2>
                                     </div>
                                 </div>
                                 <div class="sk-title">
-                                    CSS
-                                </div>
-                            </div>
-
-
-                            <div class="skill">
-                                <div class="outer-circle">
-                                    <div class="inner-circle">
-                                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="180px" height="180px">
-                                            <defs>
-                                                <linearGradient id="GradientColor">
-                                                <stop offset="0%" stop-color="#e91e63" />
-                                                <stop offset="100%" stop-color="#673ab7" />
-                                                </linearGradient>
-                                            </defs>
-                                                <circle cx="85" cy="85" r="75" stroke-linecap="round" />
-                                       </svg>
-                                       <h2 class="counter">
-                                        <span data-target="56">0</span>%
-                                       </h2>
-                                    </div>
-                                </div>
-                                <div class="sk-title">
-                                    JavaScript
+                                    Team collaboration
                                 </div>
                             </div>
 
@@ -732,14 +816,148 @@
                                                 <circle cx="85" cy="85" r="75" stroke-linecap="round" />
                                        </svg>
                                        <h2 class="counter">
-                                        <span data-target="19">0</span>%
+                                        <span data-target="82">0</span>%
                                        </h2>
                                     </div>
                                 </div>
                                 <div class="sk-title">
-                                    UI/UX Design
+                                    Creativity
                                 </div>
                             </div>
+
+                            <div class="skill">
+                                <div class="outer-circle">
+                                    <div class="inner-circle">
+                                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="180px" height="180px">
+                                            <defs>
+                                                <linearGradient id="GradientColor">
+                                                <stop offset="0%" stop-color="#e91e63" />
+                                                <stop offset="100%" stop-color="#673ab7" />
+                                                </linearGradient>
+                                            </defs>
+                                                <circle cx="85" cy="85" r="75" stroke-linecap="round" />
+                                       </svg>
+                                       <h2 class="counter">
+                                        <span data-target="92">0</span>%
+                                       </h2>
+                                    </div>
+                                </div>
+                                <div class="sk-title">
+                                    Adaptability
+                                </div>
+                            </div>
+
+                            <div class="skill">
+                                <div class="outer-circle">
+                                    <div class="inner-circle">
+                                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="180px" height="180px">
+                                            <defs>
+                                                <linearGradient id="GradientColor">
+                                                <stop offset="0%" stop-color="#e91e63" />
+                                                <stop offset="100%" stop-color="#673ab7" />
+                                                </linearGradient>
+                                            </defs>
+                                                <circle cx="85" cy="85" r="75" stroke-linecap="round" />
+                                       </svg>
+                                       <h2 class="counter">
+                                        <span data-target="93">0</span>%
+                                       </h2>
+                                    </div>
+                                </div>
+                                <div class="sk-title">
+                                    Perseverance
+                                </div>
+                            </div>
+
+                            <div class="skill">
+                                <div class="outer-circle">
+                                    <div class="inner-circle">
+                                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="180px" height="180px">
+                                            <defs>
+                                                <linearGradient id="GradientColor">
+                                                <stop offset="0%" stop-color="#e91e63" />
+                                                <stop offset="100%" stop-color="#673ab7" />
+                                                </linearGradient>
+                                            </defs>
+                                                <circle cx="85" cy="85" r="75" stroke-linecap="round" />
+                                       </svg>
+                                       <h2 class="counter">
+                                        <span data-target="78">0</span>%
+                                       </h2>
+                                    </div>
+                                </div>
+                                <div class="sk-title">
+                                    Leadership
+                                </div>
+                            </div>
+
+                            <div class="skill">
+                                <div class="outer-circle">
+                                    <div class="inner-circle">
+                                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="180px" height="180px">
+                                            <defs>
+                                                <linearGradient id="GradientColor">
+                                                <stop offset="0%" stop-color="#e91e63" />
+                                                <stop offset="100%" stop-color="#673ab7" />
+                                                </linearGradient>
+                                            </defs>
+                                                <circle cx="85" cy="85" r="75" stroke-linecap="round" />
+                                       </svg>
+                                       <h2 class="counter">
+                                        <span data-target="84">0</span>%
+                                       </h2>
+                                    </div>
+                                </div>
+                                <div class="sk-title">
+                                    Organizational Skills
+                                </div>
+                            </div>
+
+                            
+                            <div class="skill">
+                                <div class="outer-circle">
+                                    <div class="inner-circle">
+                                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="180px" height="180px">
+                                            <defs>
+                                                <linearGradient id="GradientColor">
+                                                <stop offset="0%" stop-color="#e91e63" />
+                                                <stop offset="100%" stop-color="#673ab7" />
+                                                </linearGradient>
+                                            </defs>
+                                                <circle cx="85" cy="85" r="75" stroke-linecap="round" />
+                                       </svg>
+                                       <h2 class="counter">
+                                        <span data-target="85">0</span>%
+                                       </h2>
+                                    </div>
+                                </div>
+                                <div class="sk-title">
+                                    Networking
+                                </div>
+                            </div>
+
+                            <div class="skill">
+                                <div class="outer-circle">
+                                    <div class="inner-circle">
+                                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="180px" height="180px">
+                                            <defs>
+                                                <linearGradient id="GradientColor">
+                                                <stop offset="0%" stop-color="#e91e63" />
+                                                <stop offset="100%" stop-color="#673ab7" />
+                                                </linearGradient>
+                                            </defs>
+                                                <circle cx="85" cy="85" r="75" stroke-linecap="round" />
+                                       </svg>
+                                       <h2 class="counter">
+                                        <span data-target="83">0</span>%
+                                       </h2>
+                                    </div>
+                                </div>
+                                <div class="sk-title">
+                                    Communication
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -782,7 +1000,7 @@
                 <input type="text" placeholder="Subject" id="subject" required>
                 <textarea name="msgText" cols="40" rows="10" placeholder="Your Message" id="msgText" required></textarea>
                 <div class="formBtn">
-                    <button type="submit" class="btn" id="submit">Send Message</button>
+                    <button type="submit" class="btn" id="submit">Send Message <i class="bx bx-right-arrow-alt"></i></button>
                 </div>
             </form>
         </div>
@@ -804,7 +1022,7 @@
         </span>
     </div>
 
-
+    
     <!-- scroll reveal  -->
     <script src="https://unpkg.com/scrollreveal"></script>
     <!-- Swiper JS -->
@@ -815,9 +1033,11 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
     <script src="jquery.counterup.min.js"></script>
 
+    <!-- For special icons -->
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <script src="script.js"></script>
     <script type="module" src="firebase_ContactForm.js"></script>
     <script type="module" src="firebase_Resume.js"></script>
-
+    <script type="module" src="digital_signature.js"></script>
 </body>
 </html>
