@@ -92,6 +92,10 @@ span{
     color: transparent;
 }
 
+#title_icon{
+    font-size: 1.85rem;
+}
+
 ul.navlist{
     display: flex;
 }
