@@ -19,7 +19,7 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const DataStorage = getStorage(app);
 export default DataStorage;
-const docRef = ref(DataStorage, 'Portfolio-SSLY18/Likhith_Resume_Intern.pdf');
+const docRef = ref(DataStorage, 'Portfolio-SSLY18/Likhith_Resume.pdf');
 
 // Initialize variables
 let clickCounter = 0;
