@@ -1,6 +1,6 @@
 //Roles in about section
 var typed = new Typed(".text", {
-    strings: ["CS Grad at ASU", "Software Engineer at TCS", "IT Undergrad at JNTU-V"],
+    strings: ["CS Grad at ASU", "Software Engineer-1 at TCS", "IT Undergrad at JNTU-V"],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 1000,
