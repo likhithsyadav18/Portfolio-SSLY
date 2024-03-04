@@ -3,11 +3,11 @@ function createDigiSign() {
       name: 'Likhith Seera',
       position: 'MSCS at ASU',
       mobile: '+1 3477917392',
-      email: 'likhithsyadav18@gmail.com',
+      email: 'likhith.seera@gmail.com',
       portfolioLink: 'https://likhithsyadav18.github.io/Portfolio-SSLY/',
       location: 'Tempe, AZ',
-      linkedIn: 'https://www.linkedin.com/in/sai-likhith-yadav-seera-214859168',
-      github: 'https://github.com/likhithsyadav18'
+      linkedIn: 'https://www.linkedin.com/in/likhithseera',
+      github: 'https://github.com/likhithseera'
     };
 
     const createRow = (content) => {
